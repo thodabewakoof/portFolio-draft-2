@@ -1,0 +1,236 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: Rajdhani;
+    src: url("Fonts/Rajdhani-Bold.ttf") format(truetype);
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: Spartan;
+    src: url("Fonts/Spartan-Bold.ttf") format(truetype);
+    font-weight: normal;    
+}
+
+body {
+    background-color: #1f0341; /* #eded53 */
+}
+#landingPage {
+    /* includes all other tags */
+    background-color: #1f0341;
+    height: 700px;
+    width: 960px;
+    margin: 0px auto 0px auto;
+}
+
+.header {
+    /* includes nav and main text */
+    position: relative;
+    display: flex;
+    height: 11.45%;
+    width: 100%;
+    margin-bottom: 50px;
+}
+
+.nav {
+        margin: auto 0;
+        float: left;
+        /* not yet applied cuz I don't know how to. */
+}
+.logo {
+    /* main text heading on top */
+    font-family: Rajdhani;
+    font-size: 2em;
+    color: #49118d;
+    float: left;
+    margin: auto auto;
+}
+
+/* Welcome text */
+.greeting {
+    text-align: center;
+    font-size: 80px;
+    color:#d7e607;
+    font-family: Spartan;
+    margin-bottom: 30px;
+}
+
+.content {
+    /* height of three colums */
+    height: 400px;
+}
+/* app text */
+p#appText {
+    color: #d7e607;
+    font-family: Spartan;
+    font-size: 0.9em;
+}
+/* check out my app button inside class="app" */
+.appButton {
+    position: relative;
+    height: 210px;
+    width: 240px;
+    border-width: 5px;
+    border-left-color: #330070;
+    border-top-color: #330070;
+    border-right-color: #330070;
+    border-right-color:  #330070;
+    border-style: outset;
+    box-shadow: inset 0px 0px 10px 3px #330070;
+    -moz-box-shadow: inset 0px 0px 10px 3px  #330070;
+    -webkit-box-shadow: inset 0px 0px 10px 3px   #330070;
+    border-radius: 20px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+/* .appButton:hover {
+    position: relative;
+    height: 210px;
+    width: 240px;
+    border-width: 2px;
+    border-left-color #330070;
+    border-top-color: #330070;
+    border-right-color: #330070;
+    border-right-color: #330070;
+    border-style: outset;
+    box-shadow: inset 0px 0px 10px 3px  #330070
+    -moz-box-shadow: inset 0px 0px 10px 3px  #330070;
+    -webkit-box-shadow: inset 0px 0px 10px 3px   #330070;
+    border-radius: 20px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+}
+
+.appButton:active {
+    position: relative;
+    height: 210px;
+    width: 240px;
+    border-width: 2px;
+    border-left-color #330070;
+    border-top-color #330070;
+    border-right-color #330070;
+    border-right-color:  #330070;
+    border-style: inset;
+    box-shadow: inset 0px 0px 10px 3px  #330070;
+    -moz-box-shadow: inset 0px 0px 10px 3px  #330070;
+    -webkit-box-shadow: inset 0px 0px 10px 3px  #330070;
+    border-radius: 20px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+} */
+
+/*  image in app bottom */
+.appButton img {
+    margin-right: 11px;
+}
+
+/* third column in content / explore button */
+.explore {
+    position: relative;
+    display: flex;
+}
+
+/* div inside third content column the actual explore button */
+.exploreButton {
+    position: relative;
+    top: 210px;
+    left: 100px;
+    font-family: Spartan;
+    font-size: 25px;
+    font-weight: bold;
+    color:#d7e607 ;
+    padding: 10px;
+    height: 50px;
+    width: 150px;
+    border: 3px solid #d7e607;
+    text-align: center;
+    vertical-align: middle;
+    box-shadow:  0px 0px 10px 0px  #d7e607;
+    -moz-box-shadow:  0px 0px 10px 0px  #d7e607;
+    -webkit-box-shadow:  0px 0px 10px 0px   #d7e607;
+    z-index: 11;
+}
+
+.exploreButton:hover {
+    position: relative;
+    top: 210px;
+    left: 100px;
+    font-family: Spartan;
+    font-size: 25px;
+    font-weight: bold;
+    color#d7e607 ;
+    padding: 10px;
+    height: 50px;
+    width: 150px;
+    border: 1px solid#d7e607;
+    text-align: center;
+    vertical-align: middle;
+    box-shadow:  0px 0px 10px 0px #d7e607;
+    -moz-box-shadow:  0px 0px 10px 0px #d7e607;
+    -webkit-box-shadow:  0px 0px 10px 0px   #d7e607;
+    cursor: pointer;
+}
+
+.exploreButton:active {
+    position: relative;
+    top: 210px;
+    left: 100px;
+    font-family: Spartan;
+    font-size: 25px;
+    font-weight: bold;
+    color: #d7e607 ;
+    padding: 10px;
+    height: 50px;
+    width: 150px;
+    border-width:  3px;
+    border-right-color: #d7e607;
+    border-bottom-color: #d7e607 ;
+    border-top-color: #d7e607 ;
+    border-left-color:#d7e607 ;
+    text-align: center;
+    vertical-align: middle;
+    box-shadow:  0px 0px 10px 0px  #d7e607;
+    -moz-box-shadow:  0px 0px 10px 0px #d7e607;
+    -webkit-box-shadow:  0px 0px 10px 0px   #d7e607;
+    cursor: pointer;
+}
+
+
+/* first column in content div. */
+.app {
+    position: relative;
+    top: 60px;
+    float: left;
+    height: 270px;
+    width: 270px;
+    margin: 0px 18.33px 0px 18.33px ;
+}
+
+/*  second column in content div  */
+.profilePhoto {
+    position: absolute;
+    bottom: 15%;
+    float: left;
+    height: 500px;
+    width: 900px;
+    margin: 0px;  
+    overflow: hidden; 
+    z-index: 10;
+}
+
+/*  third column in div content */
+.explore {
+    position: relative;
+    bottom: 25%;
+    float: right;
+    margin: 100px;
+}
+
